@@ -66,3 +66,34 @@ resource "aws_nat_gateway" "NAT" {
   depends_on = [aws_internet_gateway.IGW]
 }
 
+resource "aws_route_table_association" "Public" {
+  subnet_id      = aws_subnet.public.id
+  route_table_id = aws_route_table.Public-Route.id
+}
+resource "aws_route_table_association" "Private" {
+  subnet_id      = aws_subnet.private.id
+  route_table_id = aws_route_table.Private-Route.id
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
