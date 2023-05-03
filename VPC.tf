@@ -39,9 +39,30 @@ resource "aws_route_table" "Public-Route" {
     gateway_id = aws_internet_gateway.IGW.id
   }
 
-
   tags = {
     Name = "Public-Route"
   }
+}
+
+resource "aws_route_table" "Private-Route" {
+  vpc_id = aws_vpc.main.id
+  tags = {
+    Name = "Private-Route"
+  }
+}
+resource "aws_eip" "elastic-ip" {
+
+}
+resource "aws_nat_gateway" "NAT" {
+  allocation_id = aws_eip.elastic-ip.id
+  subnet_id     = aws_subnet.public.id
+
+  tags = {
+    Name = "NAT"
+  }
+
+  # To ensure proper ordering, it is recommended to add an explicit dependency
+  # on the Internet Gateway for the VPC.
+  depends_on = [aws_internet_gateway.IGW]
 }
 
