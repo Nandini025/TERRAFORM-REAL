@@ -5,6 +5,13 @@ terraform {
       version = "~> 4.0"
     }
   }
+    backend "s3" {
+      bucket = "my bucket" # give our created bucket name
+      key    = "path/to/my/key" #give any name
+      region = "us-east-1" # created bucket region
+      dynamodb_table = "name" # give the created name
+  }
+
 }
 
 # Configure the AWS Provider
