@@ -1,5 +1,5 @@
 resource "aws_vpc" "main" { # the name which we mentioned here is only understood by terraform
-  cidr_block       = "10.0.0.0/16"
+  cidr_block       = var.cidr
   instance_tenancy = "default"
 
   tags = {
