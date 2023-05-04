@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6871a8b5-6731-4baf-a9df-2668e6bc1ea3" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/variables.tf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2P627X7v85uwyngPWGtpQa1qlJZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/REAL TERRAFORM/TERRAFORM-REAL&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6871a8b5-6731-4baf-a9df-2668e6bc1ea3" name="Changes" comment="" />
+      <created>1682763044347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682763044347</updated>
+    </task>
+    <task id="LOCAL-00001" summary="created VPC">
+      <created>1682768738081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682768738081</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created Subnets">
+      <created>1682770144008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682770144008</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created Subnets">
+      <created>1682770348756</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682770348756</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed private subnet">
+      <created>1682770695061</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682770695061</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added private Subnet">
+      <created>1682771309195</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682771309195</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created IGW">
+      <created>1682771728654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682771728654</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed VPC to main name">
+      <created>1682771937292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682771937292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added Provider">
+      <created>1683107046038</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683107046043</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added route table">
+      <created>1683107406957</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683107406957</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added nat gateway">
+      <created>1683107984646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683107984646</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added subnet associations">
+      <created>1683108558786</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683108558786</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added subnet associations">
+      <created>1683108911110</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683108911110</updated>
+    </task>
+    <task id="LOCAL-00013" summary="git ignore">
+      <created>1683109560669</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683109560669</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added s3 bucket">
+      <created>1683204412586</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683204412586</updated>
+    </task>
+    <task id="LOCAL-00015" summary="created .tfvars&#10;created variables.tf&#10;updated cidr">
+      <created>1683205362790</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683205362790</updated>
+    </task>
+    <task id="LOCAL-00016" summary="created alb">
+      <created>1683209440087</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683209440087</updated>
+    </task>
+    <task id="LOCAL-00017" summary="terraform.tfvars">
+      <created>1683209472816</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683209472816</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changes">
+      <created>1683209538644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683209538644</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="created VPC" />
+    <MESSAGE value="Created Subnets" />
+    <MESSAGE value="removed private subnet" />
+    <MESSAGE value="Added private Subnet" />
+    <MESSAGE value="created IGW" />
+    <MESSAGE value="Changed VPC to main name" />
+    <MESSAGE value="Added Provider" />
+    <MESSAGE value="Added route table" />
+    <MESSAGE value="Added nat gateway" />
+    <MESSAGE value="Added subnet associations" />
+    <MESSAGE value="git ignore" />
+    <MESSAGE value="added s3 bucket" />
+    <MESSAGE value="created .tfvars&#10;created variables.tf&#10;updated cidr" />
+    <MESSAGE value="created alb&#10;modified .tfvars, .tf files" />
+    <MESSAGE value="created alb" />
+    <MESSAGE value="terraform.tfvars" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+  </component>
+</project>
