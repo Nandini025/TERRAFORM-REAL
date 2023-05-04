@@ -2,57 +2,45 @@ resource "aws_vpc" "main" { # the name which we mentioned here is only understoo
   cidr_block       = var.cidr
   instance_tenancy = "default"
 
-  tags = {
-    Name = "Auto-VPC" # this name belongs to AWS
-  }
+  tags = merge(var.tags,{Name="VPC"}) # VPC Name in AWS
 }
 resource "aws_subnet" "public" {
   vpc_id     = aws_vpc.main.id  # it will fetch VPC ID from above code
-  cidr_block = "10.0.1.0/24"
+  cidr_block = "var.public-cidr"
 
-  tags = {
-    Name = "Public-Subnet"
-  }
+  tags = merge(var.tags,{Name="public-subnet"})
 }
 
 resource "aws_subnet" "private" {
   vpc_id     = aws_vpc.main.id  # it will fetch VPC ID from above code
-
-  tags = {
-    Name = "Private-Subnet"
-  }
+  cidr_block = "var.private-cidr"
+  tags = merge(var.tags,{Name="private-subnet"})
 }
 
 resource "aws_internet_gateway" "IGW" {
   vpc_id = aws_vpc.main.id #IGW depends on VPC
 
-  tags = {
-    Name = "Auto-IGW"
-  }
+  tags = merge(var.tags,{Name="IGW"})
 }
 
 resource "aws_route_table" "Public-Route" {
   vpc_id = aws_vpc.main.id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block = var.public-route-IGW
     gateway_id = aws_internet_gateway.IGW.id
   }
 
-  tags = {
-    Name = "Public-Route"
-  }
+  tags = merge(var.tags,{Name="public-route"})
 }
 
 resource "aws_route_table" "Private-Route" {
   vpc_id = aws_vpc.main.id
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block = var.public-route-IGW
     gateway_id = aws_nat_gateway.NAT.id
   }
-  tags = {
-    Name = "Private-Route"
-  }
+  tags = merge(var.tags,{Name="private-route"})
 }
 resource "aws_eip" "elastic-ip" {
 
@@ -61,9 +49,7 @@ resource "aws_nat_gateway" "NAT" {
   allocation_id = aws_eip.elastic-ip.id
   subnet_id     = aws_subnet.public.id
 
-  tags = {
-    Name = "NAT"
-  }
+  tags = merge(var.tags,{Name="NAT"})
 
   # To ensure proper ordering, it is recommended to add an explicit dependency
   # on the Internet Gateway for the VPC.
