@@ -10,7 +10,7 @@ variable "private-cidr" {
   type= string
 }
 variable "tags" {
-  type = map(list(string))
+  type = map(string)
 
 }
 
@@ -31,3 +31,28 @@ variable "Subnet-List" {
 variable "security-group" {
   type= list(string)
 }
+
+variable "aws-accounts" {
+  type = map(list(string))
+  default = {
+    "ap-south-1" = ["137112412989"]
+    "ap-south-2" = ["140264529686"]
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
